@@ -1,1 +1,1 @@
-#Linux-ubuntu-study
+﻿# Linux-ubuntu-study
