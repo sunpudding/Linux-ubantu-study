@@ -120,3 +120,12 @@ case $- in
 # setting alias
 alias p='pwd'
 ```
+## 1.5 去除别名
+> **当我们不再需要某些别名的时候，我们可以通过unalias命令，去除掉我们不想要的别名。**
+```
+sunny@sunny-VirtualBox:~/Repository/linuxstudy$ p
+/home/sunny/Repository/linuxstudy
+sunny@sunny-VirtualBox:~/Repository/linuxstudy$ unalias p
+sunny@sunny-VirtualBox:~/Repository/linuxstudy$ p
+p：未找到命令
+```
