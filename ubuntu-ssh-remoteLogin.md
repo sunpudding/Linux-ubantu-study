@@ -56,8 +56,11 @@ enp0s3下面的inet后面的地址即为本机ip地址
 |Internal networking |  ✔             |     -  |  -  |
 |Host-only networking| ✔              | 	✔    |	-  |
 
-####详细的内容说明可以点击以下的地址
-[overview table of access options](https://www.thomas-krenn.com/en/wiki/Network_Configuration_in_VirtualBox#Internal_networking)
+
+**详细的内容说明可以点击以下的地址**
+
+
+[overview table of accessoptions](https://www.thomas-krenn.com/en/wiki/Network_Configuration_in_VirtualBox#Internal_networking)
 
 ### 4.2 SSH免密登录
 **当我们设置好以上内容时，就可以进行SSH远程登录啦，使用命令`ssh user@host`但是每次远程登录都需要输入密码，就比较费劲啦，这个时候我们可以设置免密登录，非常简单方便，let`s go**
