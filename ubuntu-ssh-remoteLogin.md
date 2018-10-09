@@ -30,7 +30,7 @@ sunny@sunny-VirtualBox:~$ sudo ps -e | grep ssh
  6525 ?        00:00:00 sshd
 ```
 >**有sshd表示已经启动**
-* 停止+
+* 停止
 >`sudo service ssh stop`
 
 ##三、查看本机ip
