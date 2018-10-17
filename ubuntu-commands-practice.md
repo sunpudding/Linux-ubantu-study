@@ -45,4 +45,4 @@
 * 监测内存使用率, 当使用率大于 80% 时, 播放警示音频 alert.mp3
 >**由于本机的内存使用率较低，所以暂时将判定值定为30%**
 
->`free -m |grep "Mem" |awk '{a=($3/$2)*100;if(a>30){print "alert.mp3"}}' | xargs play`
+>`watch "free -m |grep "Mem" | awk '{a=(\$3/\$2)*100;if(a>30){print \"alert.mp3\"}}' |xargs play"`
