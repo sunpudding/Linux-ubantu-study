@@ -35,11 +35,11 @@
 
 >`nslookup qq.com 8.8.8.8`
 
-* ###添加一个用户 guest, 要求使用 UID 2013, 不创建用户目录.
+* ### 添加一个用户 guest, 要求使用 UID 2013, 不创建用户目录.
 
 >`useradd guest -u 2013`
 
-* ###将用户 guest 添加到用户组 media, 然后从中删除.
+* ### 将用户 guest 添加到用户组 media, 然后从中删除.
 
 >创建用户组 `groupadd media`
 
@@ -49,47 +49,47 @@
 
 >删除用户 `useradd guest`
 
-* ###ping 域名 qq.com 4 次, 并设置超时时间为 1秒.
+* ### ping 域名 qq.com 4 次, 并设置超时时间为 1秒.
 
 >`ping -c 4 -w 1 www.qq.com`
 
-* ###打印出 firefox 进程的 ID, 及命令行参数, 然后结束进程
+* ### 打印出 firefox 进程的 ID, 及命令行参数, 然后结束进程
 .
 >`ps -lA | grep firefox | awk '{print $4,$14}' | xargs kill -9`
 
-* ###将文件 a.txt 内的所有 ubantu 字符改成 ubuntu 后另存为 b.txt .
+* ### 将文件 a.txt 内的所有 ubantu 字符改成 ubuntu 后另存为 b.txt .
 
 >`sed 's/ubantu/ubuntu/g' a.txt > b.txt`
 
-* ###设置 10 分钟后自动关机.
+* ### 设置 10 分钟后自动关机.
 
 >`shutdown -h 5`
 
-* ###切换 guest 用户并执行 id 命令.
+* ### 切换 guest 用户并执行 id 命令.
 
 >`su guest;id`
 
-* ###将目录 src/ 打包成 tar.bz2 文件, 然后解压到 /tmp/ 目录下.
+* ### 将目录 src/ 打包成 tar.bz2 文件, 然后解压到 /tmp/ 目录下.
 
 >`tar -jcf s.tar.bz2 ./src`
 
 >`tar -jxf s.tar.bz2 -C /tmp`
 
-* ###分别找出 CPU 和内存占用率最高的进程, 须显示出 CPU 和内存占用率, 进程名, ID 及命令行参数.
+* ### 分别找出 CPU 和内存占用率最高的进程, 须显示出 CPU 和内存占用率, 进程名, ID 及命令行参数.
 
 >`ps -aux | sort -k3nr | head -1 | awk '{printf("cpu:%.2f\%,mem:%.2f\%,PID:%s,command:%s\n",$3,$4,$2,$11)}'`
 
 >`ps -aux | sort -k3nr | head -1 | awk '{printf("cpu:%.2f\%,mem:%.2f\%,PID:%s,command:%s\n",$3,$4,$2,$11)}'`
 
-* ###打印出本机系统内核版本及名称.
+* ### 打印出本机系统内核版本及名称.
 
 >`uname -sr`
 
 
-* ###统计文件夹 src/ 下面有多少个 py 文件, 包含子目录.
+* ### 统计文件夹 src/ 下面有多少个 py 文件, 包含子目录.
 
 >`ls ./src |grep -E "*.py" |wc -l`
 
-* ###下载图片 http://example.net/bird.jpg 到 /tmp/web.jpg
+* ### 下载图片 http://example.net/bird.jpg 到 /tmp/web.jpg
 
 >`wget  http://example.net/bird.jpg  /temp/web.jpg`
