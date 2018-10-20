@@ -79,7 +79,7 @@
 
 >`ps -aux | sort -k3nr | head -1 | awk '{printf("cpu:%.2f\%,mem:%.2f\%,PID:%s,command:%s\n",$3,$4,$2,$11)}'`
 
->`ps -aux | sort -k3nr | head -1 | awk '{printf("cpu:%.2f\%,mem:%.2f\%,PID:%s,command:%s\n",$3,$4,$2,$11)}'`
+>`ps -aux | sort -k4nr | head -1 | awk '{printf("mem:%.2f\%,cpu:%.2f\%,PID:%s,command:%s\n",$4,$3,$2,$11)}'`
 
 * ### 打印出本机系统内核版本及名称.
 
